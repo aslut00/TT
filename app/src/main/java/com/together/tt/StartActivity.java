@@ -8,13 +8,10 @@ import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
-import android.util.Log;
 import android.widget.Toast;
-
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
-
 
 public class StartActivity extends AppCompatActivity  {
 
@@ -37,12 +34,15 @@ public class StartActivity extends AppCompatActivity  {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_start);
 
+        Network network = new Network();
+        network.connect();
 
         if (!hasPermissions(this, PERMISSIONS)) {
             ActivityCompat.requestPermissions(this, PERMISSIONS, PERMISSION_ALL);
         } else {
             StartThread startThread = new StartThread(handler);
             startThread.start();
+
         }
 
     }
@@ -51,7 +51,7 @@ public class StartActivity extends AppCompatActivity  {
         @Override
         public void handleMessage(Message msg){
             if(msg.what == 1){
-                Intent intent = new Intent(StartActivity.this, MainActivity.class);
+                Intent intent = new Intent(StartActivity.this, Start2Activity.class);
                 startActivity(intent);
                 finish();
             }
