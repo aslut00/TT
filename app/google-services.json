@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "312087828044",
+    "firebase_url": "https://travel-together-82718.firebaseio.com",
+    "project_id": "travel-together-82718",
+    "storage_bucket": "travel-together-82718.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:312087828044:android:fcaa4ce34e1e1b6c9e06e9",
+        "android_client_info": {
+          "package_name": "com.together.tt"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "312087828044-iulji0tifbsavaguv9nlr31undrllopi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.together.tt",
+            "certificate_hash": "a961f6ea3b31e7bef9ad98bca0248a56628e7db8"
+          }
+        },
+        {
+          "client_id": "312087828044-eugs5ptbb3s7qil7i1v4j8huk3jeebt2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC6TZf0JZvEZXO3C2aKZeFUq_CHId3mZgI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "312087828044-eugs5ptbb3s7qil7i1v4j8huk3jeebt2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
