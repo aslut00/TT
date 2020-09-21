@@ -33,14 +33,80 @@
                  android:layout_gravity="center"/>
          </androidx.appcompat.widget.Toolbar>
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_below="@+id/toolbar">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:src="@drawable/profile"
+                android:layout_height="0dp"
+                android:layout_weight="20"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp">
+
+            </ImageView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="10"
+                android:text="계정의 프로필메세지 입력공간"></TextView>
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="40"></ListView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="10"
+                android:orientation="horizontal">
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="10"
+                    android:background="@drawable/radious_btn"
+                    android:layout_margin="15dp"
+                    android:text="채팅"
+                    android:textSize="24dp"
+                    android:id="@+id/chatting_btn"></Button>
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="10"
+                    android:background="@drawable/radious_btn"
+                    android:layout_margin="15dp"
+                    android:text="신고"
+                    android:textSize="24dp"
+                    android:id="@+id/report_btn"></Button>
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="10"
+                    android:background="@drawable/radious_btn"
+                    android:layout_margin="15dp"
+                    android:text="뒤로"
+                    android:textSize="24dp"
+                    android:id="@+id/back_btn"></Button>
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/toolbar"
-            android:text="계정페이지"/>
+            android:text="계정페이지"
+            android:visibility="invisible"/>
+
+
 
     </RelativeLayout>
-
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/nav_view"
         android:layout_width="wrap_content"

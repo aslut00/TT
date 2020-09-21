@@ -1,5 +1,6 @@
 package com.together.tt;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -39,6 +40,10 @@ public class SignupActivity extends AppCompatActivity {
                 Network network = new Network();
                 network.connect();
 
+                // 리스너 추가
+                Intent intent = new Intent(SignupActivity.this,MainActivity.class);
+                startActivity(intent);
+                finish();
 
             }
         });
