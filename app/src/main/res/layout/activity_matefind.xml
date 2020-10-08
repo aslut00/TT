@@ -12,32 +12,64 @@
         android:layout_height="match_parent">
 
         <View
+            android:id="@+id/view_toolbar"
             android:layout_width="match_parent"
             android:layout_height="2dp"
-            android:id="@+id/view_toolbar"
-            android:background="@android:color/black"
-            android:layout_below="@+id/toolbar"/>
+            android:layout_below="@+id/toolbar"
+            android:background="@android:color/black" />
 
-        <androidx.appcompat.widget.Toolbar
+        <androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/toolbar"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-             xmlns:android="http://schemas.android.com/apk/res/android"
-             android:id="@+id/toolbar">
+            android:layout_height="wrap_content">
 
-             <TextView
-                 android:layout_width="wrap_content"
-                 android:layout_height="wrap_content"
-                 android:text="Travel Together"
-                 android:id="@+id/toolbar_title"
-                 style="@style/TextAppearance.AppCompat.Title"
-                 android:layout_gravity="center"/>
-         </androidx.appcompat.widget.Toolbar>
+            <TextView
+                android:id="@+id/toolbar_title"
+                style="@style/TextAppearance.AppCompat.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Travel Together" />
+        </androidx.appcompat.widget.Toolbar>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/toolbar"
-            android:text="동행찾기 화면"/>
+            android:layout_margin="10dp"
+            android:text="동행찾기"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:id="@+id/visitor_head"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="지역명"
+            android:layout_marginLeft="20dp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:id="@+id/visitor_region"
+            android:layout_below="@+id/visitor_head"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0000.00.00~0000.00.00"
+            android:layout_marginLeft="20dp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:id="@+id/visitor_schedule"
+            android:layout_below="@+id/visitor_region"/>
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/visitor_schedule"
+            android:id="@+id/visitor_list"
+            >
+
+        </ListView>
+
+
 
     </RelativeLayout>
 
